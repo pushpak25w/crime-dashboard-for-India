@@ -1,0 +1,126 @@
+body ,html{
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #666;
+
+}
+.button
+{
+  margin-top: 90px;
+  border-radius: 10px;
+  font-family:  'Lato', sans-serif;
+  font-size: 20px;
+  background-color: white;
+color: black;
+border: 2px solid #111; /* Green */
+padding: 18px 20px;
+ size: 20px; /* Set a font size */
+ cursor: pointer; /* Mouse pointer on hover */
+ transition-duration: 0.6s;
+ visibility: hidden;
+}
+.button:hover{
+  background-color: #111; /* Green */
+color: white;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover i{
+margin-left: 10px;
+}
+
+.pimg1, .pimg2, .pimg3
+{
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*fixed= Parallax */
+  /* scroll=normal */
+  background-attachment: fixed;
+}
+.pimg1
+{
+  background-image: url('../images/Crime_1.jpg');
+
+  min-height: 100%;
+}
+.pimg2
+{
+  background-image: url('../images/crime_3.jpg');
+  min-height: 400px;
+}
+.pimg3
+{
+  background-image: url('../images/crime_2.jpg');
+  min-height: 400px;
+}
+.section
+{
+  text-align: center;
+  padding: 50px 80px;
+
+}
+
+.section-light
+{
+  background: #f4f4f4;
+  color: #666;
+}
+.section-dark
+{
+  background: #282e34;
+  color: #eee;
+}
+.ptext
+{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border
+{
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+.container
+{
+  max-width:1100px;
+  margin:0 auto;
+
+}
+.counters
+{
+  color: #fff;
+  padding:40px 20px;
+  border-top: 3px;
+}
+.counters .container
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  /* grid-gap: 30px; */
+}
+.counters .counter
+{
+  font-size: 45px;
+  margin: 10px 0;
+}
+@media (max-width:568px) {
+  .pimg1, .pimg2, .pimg3
+  {
+    background-attachment: scroll;
+  }
+}
