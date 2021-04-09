@@ -22,8 +22,3 @@ counters.forEach(counter =>
 });
 
 const but= document.getElementsByClassName("button")[0];
-setTimeout(() =>
-{
-but.style.visibility= 'visible';
-but.style.transform= 'translateY(-20px)';
-}, 5000);

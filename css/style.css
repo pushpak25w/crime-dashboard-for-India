@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body ,html{
   margin:0;
   padding: 0;
@@ -22,7 +24,7 @@ padding: 18px 20px;
  size: 20px; /* Set a font size */
  cursor: pointer; /* Mouse pointer on hover */
  transition-duration: 0.6s;
- visibility: hidden;
+
 }
 .button:hover{
   background-color: #111; /* Green */
@@ -118,9 +120,119 @@ margin-left: 10px;
   font-size: 45px;
   margin: 10px 0;
 }
-@media (max-width:568px) {
+/* styling of main.html  starts here*/
+header{
+  background-color: #35424a;
+  color: white;
+  padding-top: 30px;
+  min-height: 50px;
+  border-bottom: #e8491d 3px solid;
+  }
+  header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  }
+header ul{
+  margin: 0;
+  padding: 0;
+  }
+  header li{
+
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+
+header nav{
+  position: absolute;
+  left:25px;
+   top:25px;
+  margin-top: 5px;
+}
+
+header .current
+{
+  color:#e84e1d;
+  font-weight: bold;
+
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+.main .choice
+{
+  display: flex;
+  flex-direction: row;
+}
+.main .container p
+{
+  font-size: 40px;
+  color: #282e34;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+}
+.main .container p:hover
+{
+  font-size: 41px;
+  color: #000;
+  font-weight: bold;
+}
+
+.main a{
+  color: #262626;
+  text-decoration: none;
+}
+.main ul
+{
+  list-style: none;
+}
+.main .container #graph , #map
+{
+  width: 850px;
+  margin-left: 3px;
+  margin-right: 3px;
+  height:470px;
+  border: 1px solid #111;
+  margin-bottom: 50px;
+}
+.main .head
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .head p{
+  margin-top: 50px;
+  margin-left: 230px;
+  margin-right: 140px;
+}
+.main #graph
+{
+
+
+  background: url('../images/graoh_3.jpg') no-repeat center center/cover;
+
+}
+.main #map
+{
+  background: url('../images/map_3.jpg') no-repeat center center/cover;
+}
+.main #graph:hover{
+  border:3px solid green;
+}
+.main #map:hover{
+    border:3px solid green;
+}
+@media (max-width:1000px) {
   .pimg1, .pimg2, .pimg3
   {
     background-attachment: scroll;
   }
+  .main .head p{
+    margin-left: 170px;
+    margin-right: 10px;
+  }
+
 }
