@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body ,html{
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #666;
+
+}
+.button
+{
+  margin-top: 90px;
+  border-radius: 10px;
+  font-family:  'Lato', sans-serif;
+  font-size: 20px;
+  background-color: white;
+color: black;
+border: 2px solid #111; /* Green */
+padding: 18px 20px;
+ size: 20px; /* Set a font size */
+ cursor: pointer; /* Mouse pointer on hover */
+ transition-duration: 0.6s;
+
+}
+.button:hover{
+  background-color: #111; /* Green */
+color: white;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover i{
+margin-left: 10px;
+}
+
+.pimg1, .pimg2, .pimg3
+{
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*fixed= Parallax */
+  /* scroll=normal */
+  background-attachment: fixed;
+}
+.pimg1
+{
+  background-image: url('../images/Crime_1.jpg');
+
+  min-height: 100%;
+}
+.pimg2
+{
+  background-image: url('../images/crime_3.jpg');
+  min-height: 400px;
+}
+.pimg3
+{
+  background-image: url('../images/crime_2.jpg');
+  min-height: 400px;
+}
+.section
+{
+  text-align: center;
+  padding: 50px 80px;
+
+}
+
+.section-light
+{
+  background: #f4f4f4;
+  color: #666;
+}
+.section-dark
+{
+  background: #282e34;
+  color: #eee;
+}
+.ptext
+{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border
+{
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+.container
+{
+  max-width:1100px;
+  margin:0 auto;
+
+}
+.counters
+{
+  color: #fff;
+  padding:40px 20px;
+  border-top: 3px;
+}
+.counters .container
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  /* grid-gap: 30px; */
+}
+.counters .counter
+{
+  font-size: 45px;
+  margin: 10px 0;
+}
+/* styling of main.html  starts here*/
+header{
+  background-color: #35424a;
+  color: white;
+  padding-top: 30px;
+  min-height: 50px;
+  border-bottom: #e8491d 3px solid;
+  }
+  header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  }
+header ul{
+  margin: 0;
+  padding: 0;
+  }
+  header li{
+
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+
+header nav{
+  position: absolute;
+  left:25px;
+   top:25px;
+  margin-top: 5px;
+}
+
+header .current
+{
+  color:#e84e1d;
+  font-weight: bold;
+
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+.main .choice
+{
+  display: flex;
+  flex-direction: row;
+}
+.main .container p
+{
+  font-size: 40px;
+  color: #282e34;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+}
+.main .container p:hover
+{
+  font-size: 41px;
+  color: #000;
+  font-weight: bold;
+}
+
+.main a{
+  color: #262626;
+  text-decoration: none;
+}
+.main ul
+{
+  list-style: none;
+}
+.main .container #graph , #map
+{
+  width: 850px;
+  margin-left: 3px;
+  margin-right: 3px;
+  height:470px;
+  border: 1px solid #111;
+  margin-bottom: 50px;
+}
+.main .head
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .head p{
+  margin-top: 50px;
+  margin-left: 230px;
+  margin-right: 140px;
+}
+.main #graph
+{
+
+
+  background: url('../images/graoh_3.jpg') no-repeat center center/cover;
+
+}
+.main #map
+{
+  background: url('../images/map_3.jpg') no-repeat center center/cover;
+}
+.main #graph:hover{
+  border:3px solid green;
+}
+.main #map:hover{
+    border:3px solid green;
+}
+@media (max-width:1000px) {
+  .pimg1, .pimg2, .pimg3
+  {
+    background-attachment: scroll;
+  }
+  .main .head p{
+    margin-left: 170px;
+    margin-right: 10px;
+  }
+
+}
