@@ -14,6 +14,23 @@ def clean(data01to14):
 	    else:
 	        district.append(i[0]+i[1:].lower())
 	return district
+def clean_states(data01to14):
+	district=[]
+	check={}
+	for i in data01to14['STATE/UT']:
+	    if ' ' in i and i not in check:
+	        temp=i.find(' ')
+	        if i.count(' ')==1:
+	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:].lower())
+	            check[i]=1
+	        else:
+	            temp2=i.rfind(' ')
+	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:temp2].lower()+i[temp2+1]+i[temp2+2:].lower())
+	            check[i]=1
+	    elif i not in check:
+	        district.append(i[0]+i[1:].lower())
+	        check[i]=1
+	return district
 def murder(data01to14):
 	murder=pd.DataFrame({'DISTRICT':district,'MURDER':data01to14['MURDER']})
 	finalmurder=dict()
@@ -55,12 +72,27 @@ def merge_women(finalwomen,map_df):
 	mergedwomen['women'].fillna(mergedwomen['women'].mean(), inplace=True)
 	return mergedwomen
 
+def districtwise(crime,district):
+	fp = "gadm36_IND_shp/gadm36_IND_2.shp"
+	map_df = gpd.read_file(fp)
+	map_df = map_df[['NAME_1', 'NAME_2', 'geometry']]
+	map_df = map_df[map_df['NAME_1']==district]
+	district_wise = data01to14[['STATE/UT', 'DISTRICT', crime]]
+	district_wise = district_wise[district_wise['STATE/UT']==district]
+	merged = map_df.set_index('NAME_2').join(district_wise.set_index('DISTRICT'))
+	merged[crime].fillna(merged[crime].mean(), inplace=True)
+	fig, ax = plt.subplots(1, figsize=(6,6))
+	ax.axis('off')
+	ax.set_title(district, fontdict={'fontsize': '25', 'fontweight' : '3'})
+	merged.plot(column=crime, cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
+	fig.savefig("static/images/District_wise.png", dpi=100)
+
 fp = "gadm36_IND_shp/gadm36_IND_2.shp" 
 map_df=gpd.read_file(fp)
 map_df = map_df[['NAME_2', 'geometry']]
 data01to14=pd.read_csv('data/01_District_wise_crimes_committed_IPC_2001_2012.csv')
 district=clean(data01to14)
-crime=input("Enter crime: ")
+crime='murder'
 if crime=="murder":
 	finalmurder=murder(data01to14)
 	mergedmurder=merge_murder(finalmurder,map_df)

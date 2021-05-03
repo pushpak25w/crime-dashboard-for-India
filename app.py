@@ -1,10 +1,12 @@
 from flask import Flask,render_template,url_for,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from India import districtwise,clean_states,data01to14
+
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
 db=SQLAlchemy(app)
-
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 class Data(db.Model):
 	id=db.Column(db.Integer,primary_key=True)
 	state=db.Column(db.String(200),nullable=False)
@@ -39,6 +41,17 @@ def graph():
 def map():
 	return render_template('map.html')
 
+@app.route('/select')
+def select():
+	return render_template('select.html',data=[{'name':i} for i in clean_states(data01to14)])
+
+@app.route('/selected',methods=['GET','POST'])
+def selected():
+	district_selected=request.form.get('district')
+	crime_selected=request.form.get('crime') 
+	districtwise(crime_selected,district_selected)
+	return render_template('display.html')
+
 @app.route('/insert',methods=['POST','GET'])
 def insert():
 	if request.method=='POST':
@@ -71,6 +84,19 @@ def delete(id):
 		return render_template('insert.html')
 	except:
 		return 'some problem'
+
+
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
 
 if __name__ == "__main__":
 	app.run(debug=True)

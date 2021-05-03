@@ -1,11 +1,16 @@
-<form class="form-inline" method="POST" action="{{ url_for('test') }}">
+<form class="form-inline" method="POST" action="{{ url_for('selected') }}">
   <div class="form-group">
     <div class="input-group">
-        <span class="input-group-addon">Please select</span>
-            <select name="comp_select" class="selectpicker form-control">
+            <select name="district" class="selectpicker form-control">
               {% for o in data %}
               <option value="{{ o.name }}">{{ o.name }}</option>
               {% endfor %}
+            </select>
+            <select name="crime" class="selectpicker form-control">
+              <option value="MURDER">murder</option>
+              <option value="women">women</option>
+              <option value="theft">theft</option>
+              <option value="children">children</option>
             </select>
     </div>
     <button type="submit" class="btn btn-default">Go</button>

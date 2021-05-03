@@ -1,16 +1,8 @@
-crime=input("Enter crime: ")
-if crime=="murder":
-	finalmurder=murder(data01to14)
-	mergedmurder=merge_murder(finalmurder,map_df)
-	fig, ax = plt.subplots(1, figsize=(20,20))
-	mergedmurder.plot(column='MURDER', cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
-elif crime=="theft":
-	finaltheft=theft(data01to14)
-	mergedtheft=merge_theft(finaltheft,map_df)
-	fig, ax = plt.subplots(1, figsize=(20,20))
-	mergedtheft.plot(column='theft', cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
-elif crime=="women":
-	finalwomen=women(data01to14)
-	mergedwomen=merge_women(finalwomen,map_df)
-	fig, ax = plt.subplots(1, figsize=(20,20))
-	mergedwomen.plot(column='women', cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
+def districtwise(crime,district):
+	fp = "gadm36_IND_shp/gadm36_IND_2.shp"
+	map_df = gpd.read_file(fp)
+	district_wise = data01to14[['STATE/UT', 'DISTRICT', crime]]
+	district_wise = district_wise[district_wise['STATE/UT']==district]
+	merged = map_df.set_index('NAME_2').join(district_wise.set_index('DISTRICT'))
+	fig, ax = plt.subplots(1, figsize=(10, 6))
+	fig.savefig("District_wise.png", dpi=100)
