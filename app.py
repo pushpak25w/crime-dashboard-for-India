@@ -1,7 +1,9 @@
 from flask import Flask,render_template,url_for,request,redirect
 from flask_sqlalchemy import SQLAlchemy
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
 from datetime import datetime
-from India import districtwise,clean_states,data01to14
+from India import districtwise,clean_states,data01to14,multi_crime_plot
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
@@ -51,6 +53,17 @@ def selected():
 	crime_selected=request.form.get('crime') 
 	districtwise(crime_selected,district_selected)
 	return render_template('display.html')
+
+@app.route('/multi_select')
+def multi_select():
+	return render_template('multiselect.html',data=[{'name':i} for i in data01to14['DISTRICT'].unique()],crimes=[{'name':i} for i in data01to14])
+
+@app.route('/multi_selected',methods=['GET','POST'])
+def multi_selected():
+	district_selected=request.form.get('district')
+	crimes_selected = request.form.getlist('crime')
+	multi_crime_plot(district_selected,crimes_selected)
+	return render_template('display_multi.html')
 
 @app.route('/insert',methods=['POST','GET'])
 def insert():

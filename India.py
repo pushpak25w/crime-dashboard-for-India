@@ -37,20 +37,19 @@ def clean_states(data01to14):
 	return district
 def all_states(data01to14):
 	district=[]
-	for i in data01to14['STATE/UT']:
+	for i in data01to14['DISTRICT']:
 	    if ' ' in i:
 	        temp=i.find(' ')
-	        if i.count(' ')==1:
+	        if i.count(' ')==1 and temp<len(i)-1:
 	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:].lower())
-	            check[i]=1
 	        else:
-	            temp2=i.rfind(' ')
-	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:temp2].lower()+i[temp2+1]+i[temp2+2:].lower())
-	            check[i]=1
+	            district.append(i)
 	    else:
 	        district.append(i[0]+i[1:].lower())
-	        check[i]=1
 	return district
+
+data01to14['DISTRICT']=all_states(data01to14)
+
 def murder(data01to14):
 	district=clean(data01to14)
 	murder=pd.DataFrame({'DISTRICT':district,'MURDER':data01to14['MURDER']})
@@ -111,12 +110,20 @@ def districtwise(crime,district):
 		merged=merge_theft(theft(district_wise),district,map_df)
 	elif crime=='women':
 		merged=merge_women(women(district_wise),district,map_df)
-	fig, ax = plt.subplots(1, figsize=(6,6))
+	fig, ax = plt.subplots(1, figsize=(8,8))
 	ax.axis('off')
 	ax.set_title(district, fontdict={'fontsize': '25', 'fontweight' : '3'})
 	merged.plot(column=crime, cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
 	fig.savefig("static/images/District_wise.png", dpi=100)
 
+def multi_crime_plot(district,crime):
+    district_wise = data01to14[data01to14['DISTRICT'] == district]
+    gr_plt=district_wise.set_index('YEAR')[crime].plot(kind = 'line', figsize = (8,8))
+    plt.xlabel('Years')
+    plt.ylabel('No. of Cases in '+district)
+    plt.title(','.join(crime))
+    fig = gr_plt.get_figure()
+    fig.savefig("static/images/plot.png")
 '''if crime=="murder":
 	finalmurder=murder(data01to14)
 	mergedmurder=merge_murder(finalmurder,map_df)
