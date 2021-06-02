@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 from datetime import datetime
-from India import districtwise,clean_states,data01to14,multi_crime_plot
+from India import districtwise,clean_states,data01to14,multi_crime_plot,plot_map_any
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
@@ -64,6 +64,16 @@ def multi_selected():
 	crimes_selected = request.form.getlist('crime')
 	multi_crime_plot(district_selected,crimes_selected)
 	return render_template('display_multi.html')
+
+@app.route('/select_any')
+def select_any():
+	return render_template('select_any.html',crimes=[{'name':i} for i in data01to14])
+
+@app.route('/selected_any',methods=['GET','POST'])
+def selected_any():
+	crime_selected = request.form.getlist('crime')
+	plot_map_any(crime_selected)
+	return render_template('display_any.html')
 
 @app.route('/insert',methods=['POST','GET'])
 def insert():
