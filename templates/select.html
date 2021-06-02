@@ -1,18 +1,43 @@
-<form class="form-inline" method="POST" action="{{ url_for('selected') }}">
-  <div class="form-group">
-    <div class="input-group">
-            <select name="district" class="selectpicker form-control">
-              {% for o in data %}
-              <option value="{{ o.name }}">{{ o.name }}</option>
-              {% endfor %}
-            </select>
-            <select name="crime" class="selectpicker form-control">
-              <option value="MURDER">murder</option>
-              <option value="women">women</option>
-              <option value="theft">theft</option>
-              <option value="children">children</option>
-            </select>
-    </div>
-    <button type="submit" class="btn btn-default">Go</button>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Multiselect</title>
+</head>
+<body>
+  <p>enter the heading</p>
+  <div style="margin-top:100px"class="forms">
+    <form class="form-inline form" method="POST" action="{{ url_for('selected') }}">
+      <div class="form-group">
+        <div style="margin-left:10px" class="input-group">
+                <select style="margin-left:15px;border-radius:3px" name="district" class="selectpicker form-control">
+                  {% for o in data %}
+                  <option style="margin-left:10px" value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
+                </select>
+                <select style="margin-left:5px;border-radius:3px"  name="crime" class="selectpicker form-control">
+                  <option style="margin-left:7px" value="MURDER">murder</option>
+                  <option style="margin-left:7px" value="women">women</option>
+                  <option style="margin-left:7px" value="theft">theft</option>
+                  <option style="margin-left:7px" value="children">children</option>
+                </select>
+        </div>
+        <button style="margin-left:15px; width:70px" type="submit" class="btn btn-primary">Go</button>
+      </div>
+    </form>
+
   </div>
-</form>
+
+</body>
+
+
+</html>
