@@ -5,19 +5,6 @@ import matplotlib.pyplot as plt
 
 #map_df = map_df[['NAME_2', 'geometry']]
 data01to14=pd.read_csv('data/01_District_wise_crimes_committed_IPC_2001_2012.csv')
-def clean(data01to14):
-	district=[]
-	for i in data01to14['DISTRICT']:
-	    if ' ' in i:
-	        temp=i.find(' ')
-	        if i.count(' ')==1:
-	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:].lower())
-	        else:
-	            temp2=i.rfind(' ')
-	            district.append(i[0]+i[1:temp+1].lower()+i[temp+1]+i[temp+2:temp2].lower()+i[temp2+1]+i[temp2+2:].lower())
-	    else:
-	        district.append(i[0]+i[1:].lower())
-	return district
 def clean_states(data01to14):
 	district=[]
 	check={}
@@ -35,7 +22,7 @@ def clean_states(data01to14):
 	        district.append(i[0]+i[1:].lower())
 	        check[i]=1
 	return district
-def all_states(data01to14):
+def all_districts(data01to14):
 	district=[]
 	for i in data01to14['DISTRICT']:
 	    if ' ' in i:
@@ -48,10 +35,10 @@ def all_states(data01to14):
 	        district.append(i[0]+i[1:].lower())
 	return district
 
-data01to14['DISTRICT']=all_states(data01to14)
+data01to14['DISTRICT']=all_districts(data01to14)
 
 def murder(data01to14):
-	district=clean(data01to14)
+	district=data01to14['DISTRICT']
 	murder=pd.DataFrame({'DISTRICT':district,'MURDER':data01to14['MURDER']})
 	finalmurder=dict()
 	for i in district:
@@ -59,7 +46,7 @@ def murder(data01to14):
 	return finalmurder
 
 def theft(data01to14):
-	district=clean(data01to14)
+	district=data01to14['DISTRICT']
 	theft=pd.DataFrame({'district':district,'theft':data01to14['THEFT'],'robbery':data01to14['ROBBERY'],'burglary':data01to14['BURGLARY']})
 	finaltheft=dict()
 	for i in district:
@@ -68,7 +55,7 @@ def theft(data01to14):
 	return finaltheft
 
 def women(data01to14):
-	district=clean(data01to14)
+	district=data01to14['DISTRICT']
 	women=pd.DataFrame({'district':district,'kidnap':data01to14['KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS'],'rape':data01to14['RAPE'],'assault':data01to14['ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY'],'insult':data01to14['INSULT TO MODESTY OF WOMEN'],'husband':data01to14['CRUELTY BY HUSBAND OR HIS RELATIVES'],'dowry':data01to14['DOWRY DEATHS']})
 	finalwomen=dict()
 	for i in district:
@@ -124,6 +111,29 @@ def multi_crime_plot(district,crime):
     plt.title(','.join(crime))
     fig = gr_plt.get_figure()
     fig.savefig("static/images/plot.png")
+
+def any(crime):
+	any_crime=pd.DataFrame({'district':data01to14['DISTRICT'],crime:data01to14[crime]})
+	finalany=dict()
+	for i in data01to14['DISTRICT']:
+	    useme=any_crime[any_crime['district']==i]
+	    finalany[i]=sum(useme[crime])
+	return finalany
+
+def merge_any(finalany,crime,mapdf):
+	
+
+def plot_map_any(crime):
+	fp = "gadm36_IND_shp/gadm36_IND_2.shp"
+	map_df = gpd.read_file(fp)
+	map_df = map_df[['NAME_2', 'geometry']]
+
+	
+	fig, ax = plt.subplots(1, figsize=(20,20))
+	ax.axis('off')
+	ax.set_title(crime, fontdict={'fontsize': '25', 'fontweight' : '3'})
+	merged.plot(column=crime, cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
+	fig.savefig("static/images/District_wise.png", dpi=100)
 '''if crime=="murder":
 	finalmurder=murder(data01to14)
 	mergedmurder=merge_murder(finalmurder,map_df)
