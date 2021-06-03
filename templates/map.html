@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <link rel="stylesheet" href="selectstyle.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome !</title>
 </head>
@@ -25,10 +25,10 @@
   <div class="container">
 
 <!-- <p>Want to visulaize in ??</p> -->
-<div class="head">
+<div style="width:60%;margin:auto" class="head">
 
-  <p onclick="location.href='{{url_for('select')}}'">Districtwise general crimes</p>
-  <p onclick="location.href='{{url_for('select_any')}}'" >All crimes</p>
+  <p style="font-size :1.5rem;width:55%;margin-left:190px;margin-right:20px" onclick="location.href='{{url_for('select')}}'">Districtwise general crimes</p>
+  <p style="font-size :1.5rem;width:55%;margin-right:190px;margin-left:20px" onclick="location.href='{{url_for('select_any')}}'" >All crimes</p>
 </div>
 
     <div class="choice">
