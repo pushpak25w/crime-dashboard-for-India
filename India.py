@@ -120,15 +120,22 @@ def any(crime):
 	    finalany[i]=sum(useme[crime])
 	return finalany
 
-def merge_any(finalany,crime,mapdf):
+#def merge_any(finalany,crime,mapdf):
 	
 
 def plot_map_any(crime):
+	for i in crime:
+		crime=i
 	fp = "gadm36_IND_shp/gadm36_IND_2.shp"
 	map_df = gpd.read_file(fp)
 	map_df = map_df[['NAME_2', 'geometry']]
-
-	
+	final=dict()
+	for i in data01to14['DISTRICT'].unique():
+		final[i]=sum(data01to14[crime][data01to14['DISTRICT']==i])
+	d={'district':final.keys(),crime:final.values()}
+	district_wise=pd.DataFrame(d)
+	merged=map_df.set_index('NAME_2').join(district_wise.set_index('district'))
+	merged.fillna(merged[crime].mean(),inplace=True)
 	fig, ax = plt.subplots(1, figsize=(20,20))
 	ax.axis('off')
 	ax.set_title(crime, fontdict={'fontsize': '25', 'fontweight' : '3'})

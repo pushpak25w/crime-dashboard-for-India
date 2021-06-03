@@ -1,0 +1,505 @@
+Region,States/UTs,Type,Cases
+Arabian Sea,Lakshadweep,Dacoity,0
+Arabian Sea,Lakshadweep,Deaths due to negligent driving/act,0
+Arabian Sea,Lakshadweep,Dowry Deaths,0
+Arabian Sea,Lakshadweep,Grievous Hurt,1
+Arabian Sea,Lakshadweep,Hurt,1
+Arabian Sea,Lakshadweep,Incidence of Rash Driving,1
+Arabian Sea,Lakshadweep,Kidnapping & Abduction_Total,0
+Arabian Sea,Lakshadweep,Murder,0
+Arabian Sea,Lakshadweep,Offences against State,0
+Arabian Sea,Lakshadweep,Other IPC crimes,30
+Arabian Sea,Lakshadweep,Rape,1
+Arabian Sea,Lakshadweep,Riots,9
+Arabian Sea,Lakshadweep,Robbery,0
+Arabian Sea,Lakshadweep,Theft,15
+Bay of Bengal,A&N Islands,Dacoity,0
+Bay of Bengal,A&N Islands,Deaths due to negligent driving/act,20
+Bay of Bengal,A&N Islands,Dowry Deaths,3
+Bay of Bengal,A&N Islands,Grievous Hurt,29
+Bay of Bengal,A&N Islands,Hurt,29
+Bay of Bengal,A&N Islands,Incidence of Rash Driving,198
+Bay of Bengal,A&N Islands,Kidnapping & Abduction_Total,22
+Bay of Bengal,A&N Islands,Murder,8
+Bay of Bengal,A&N Islands,Offences against State,0
+Bay of Bengal,A&N Islands,Other IPC crimes,141
+Bay of Bengal,A&N Islands,Rape,32
+Bay of Bengal,A&N Islands,Riots,10
+Bay of Bengal,A&N Islands,Robbery,2
+Bay of Bengal,A&N Islands,Theft,45
+Central,Chhattisgarh,Dacoity,58
+Central,Madhya Pradesh,Dacoity,105
+Central,Chhattisgarh,Deaths due to negligent driving/act,3393
+Central,Madhya Pradesh,Deaths due to negligent driving/act,7920
+Central,Chhattisgarh,Dowry Deaths,128
+Central,Madhya Pradesh,Dowry Deaths,733
+Central,Chhattisgarh,Grievous Hurt,3961
+Central,Madhya Pradesh,Grievous Hurt,12113
+Central,Chhattisgarh,Hurt,3960
+Central,Madhya Pradesh,Hurt,12097
+Central,Chhattisgarh,Incidence of Rash Driving,7759
+Central,Madhya Pradesh,Incidence of Rash Driving,39259
+Central,Chhattisgarh,Kidnapping & Abduction_Total,2014
+Central,Madhya Pradesh,Kidnapping & Abduction_Total,7833
+Central,Chhattisgarh,Murder,998
+Central,Madhya Pradesh,Murder,2274
+Central,Madhya Pradesh,Offences against State,0
+Central,Chhattisgarh,Offences against State,7
+Central,Chhattisgarh,Other IPC crimes,21897
+Central,Madhya Pradesh,Other IPC crimes,127869
+Central,Chhattisgarh,Rape,1436
+Central,Madhya Pradesh,Rape,5076
+Central,Chhattisgarh,Riots,809
+Central,Madhya Pradesh,Riots,1850
+Central,Chhattisgarh,Robbery,405
+Central,Madhya Pradesh,Robbery,1969
+Central,Chhattisgarh,Theft,6098
+Central,Madhya Pradesh,Theft,29244
+Eastern,West Bengal,Dacoity,143
+Eastern,Jharkhand,Dacoity,244
+Eastern,Odisha,Dacoity,484
+Eastern,Bihar,Dacoity,538
+Eastern,Jharkhand,Deaths due to negligent driving/act,1635
+Eastern,Bihar,Deaths due to negligent driving/act,4332
+Eastern,Odisha,Deaths due to negligent driving/act,4355
+Eastern,West Bengal,Deaths due to negligent driving/act,5035
+Eastern,Jharkhand,Dowry Deaths,350
+Eastern,Odisha,Dowry Deaths,441
+Eastern,West Bengal,Dowry Deaths,504
+Eastern,Bihar,Dowry Deaths,1373
+Eastern,Jharkhand,Grievous Hurt,1344
+Eastern,Odisha,Grievous Hurt,5531
+Eastern,Bihar,Grievous Hurt,17351
+Eastern,West Bengal,Grievous Hurt,18236
+Eastern,Jharkhand,Hurt,1339
+Eastern,Odisha,Hurt,5519
+Eastern,Bihar,Hurt,17347
+Eastern,West Bengal,Hurt,18192
+Eastern,Jharkhand,Incidence of Rash Driving,2561
+Eastern,Bihar,Incidence of Rash Driving,3485
+Eastern,Odisha,Incidence of Rash Driving,4166
+Eastern,West Bengal,Incidence of Rash Driving,11680
+Eastern,Jharkhand,Kidnapping & Abduction_Total,1423
+Eastern,Odisha,Kidnapping & Abduction_Total,3073
+Eastern,Bihar,Kidnapping & Abduction_Total,6570
+Eastern,West Bengal,Kidnapping & Abduction_Total,7285
+Eastern,Odisha,Murder,1450
+Eastern,Jharkhand,Murder,1658
+Eastern,West Bengal,Murder,2370
+Eastern,Bihar,Murder,3403
+Eastern,Odisha,Offences against State,6
+Eastern,West Bengal,Offences against State,8
+Eastern,Jharkhand,Offences against State,18
+Eastern,Bihar,Offences against State,20
+Eastern,Jharkhand,Other IPC crimes,17075
+Eastern,Odisha,Other IPC crimes,20584
+Eastern,West Bengal,Other IPC crimes,60639
+Eastern,Bihar,Other IPC crimes,75799
+Eastern,Jharkhand,Rape,1050
+Eastern,Bihar,Rape,1127
+Eastern,Odisha,Rape,1978
+Eastern,West Bengal,Rape,3409
+Eastern,Odisha,Riots,1732
+Eastern,Jharkhand,Riots,1975
+Eastern,West Bengal,Riots,5509
+Eastern,Bihar,Riots,13566
+Eastern,Jharkhand,Robbery,521
+Eastern,West Bengal,Robbery,606
+Eastern,Bihar,Robbery,1600
+Eastern,Odisha,Robbery,1828
+Eastern,Jharkhand,Theft,7046
+Eastern,Odisha,Theft,9410
+Eastern,Bihar,Theft,22888
+Eastern,West Bengal,Theft,22915
+Northeastern,Manipur,Dacoity,0
+Northeastern,Mizoram,Dacoity,8
+Northeastern,Nagaland,Dacoity,8
+Northeastern,Meghalaya,Dacoity,56
+Northeastern,Nagaland,Deaths due to negligent driving/act,17
+Northeastern,Mizoram,Deaths due to negligent driving/act,58
+Northeastern,Manipur,Deaths due to negligent driving/act,109
+Northeastern,Meghalaya,Deaths due to negligent driving/act,124
+Northeastern,Mizoram,Dowry Deaths,0
+Northeastern,Nagaland,Dowry Deaths,0
+Northeastern,Manipur,Dowry Deaths,1
+Northeastern,Meghalaya,Dowry Deaths,1
+Northeastern,Nagaland,Grievous Hurt,23
+Northeastern,Mizoram,Grievous Hurt,100
+Northeastern,Meghalaya,Grievous Hurt,153
+Northeastern,Manipur,Grievous Hurt,274
+Northeastern,Nagaland,Hurt,23
+Northeastern,Mizoram,Hurt,100
+Northeastern,Meghalaya,Hurt,153
+Northeastern,Manipur,Hurt,274
+Northeastern,Nagaland,Incidence of Rash Driving,11
+Northeastern,Mizoram,Incidence of Rash Driving,20
+Northeastern,Meghalaya,Incidence of Rash Driving,92
+Northeastern,Manipur,Incidence of Rash Driving,635
+Northeastern,Mizoram,Kidnapping & Abduction_Total,7
+Northeastern,Nagaland,Kidnapping & Abduction_Total,37
+Northeastern,Meghalaya,Kidnapping & Abduction_Total,179
+Northeastern,Manipur,Kidnapping & Abduction_Total,182
+Northeastern,Mizoram,Murder,42
+Northeastern,Nagaland,Murder,58
+Northeastern,Manipur,Murder,96
+Northeastern,Meghalaya,Murder,159
+Northeastern,Nagaland,Offences against State,0
+Northeastern,Mizoram,Offences against State,1
+Northeastern,Manipur,Offences against State,10
+Northeastern,Meghalaya,Offences against State,32
+Northeastern,Nagaland,Other IPC crimes,142
+Northeastern,Mizoram,Other IPC crimes,146
+Northeastern,Manipur,Other IPC crimes,404
+Northeastern,Meghalaya,Other IPC crimes,823
+Northeastern,Nagaland,Rape,30
+Northeastern,Manipur,Rape,75
+Northeastern,Meghalaya,Rape,118
+Northeastern,Mizoram,Rape,120
+Northeastern,Mizoram,Riots,0
+Northeastern,Meghalaya,Riots,8
+Northeastern,Nagaland,Riots,10
+Northeastern,Manipur,Riots,101
+Northeastern,Mizoram,Robbery,6
+Northeastern,Manipur,Robbery,7
+Northeastern,Nagaland,Robbery,38
+Northeastern,Meghalaya,Robbery,97
+Northeastern,Nagaland,Theft,418
+Northeastern,Mizoram,Theft,852
+Northeastern,Meghalaya,Theft,857
+Northeastern,Manipur,Theft,1001
+Northeastern,Sikkim,Dacoity,1
+Northeastern,Tripura,Dacoity,1
+Northeastern,Arunachal Pradesh,Dacoity,12
+Northeastern,Assam,Dacoity,267
+Northeastern,Sikkim,Deaths due to negligent driving/act,46
+Northeastern,Arunachal Pradesh,Deaths due to negligent driving/act,81
+Northeastern,Tripura,Deaths due to negligent driving/act,168
+Northeastern,Assam,Deaths due to negligent driving/act,602
+Northeastern,Sikkim,Dowry Deaths,0
+Northeastern,Arunachal Pradesh,Dowry Deaths,1
+Northeastern,Tripura,Dowry Deaths,33
+Northeastern,Assam,Dowry Deaths,188
+Northeastern,Sikkim,Grievous Hurt,58
+Northeastern,Arunachal Pradesh,Grievous Hurt,247
+Northeastern,Tripura,Grievous Hurt,1232
+Northeastern,Assam,Grievous Hurt,7583
+Northeastern,Sikkim,Hurt,56
+Northeastern,Arunachal Pradesh,Hurt,247
+Northeastern,Tripura,Hurt,1228
+Northeastern,Assam,Hurt,7583
+Northeastern,Arunachal Pradesh,Incidence of Rash Driving,102
+Northeastern,Sikkim,Incidence of Rash Driving,162
+Northeastern,Tripura,Incidence of Rash Driving,548
+Northeastern,Assam,Incidence of Rash Driving,3202
+Northeastern,Sikkim,Kidnapping & Abduction_Total,20
+Northeastern,Tripura,Kidnapping & Abduction_Total,126
+Northeastern,Arunachal Pradesh,Kidnapping & Abduction_Total,146
+Northeastern,Assam,Kidnapping & Abduction_Total,4823
+Northeastern,Sikkim,Murder,12
+Northeastern,Arunachal Pradesh,Murder,86
+Northeastern,Tripura,Murder,140
+Northeastern,Assam,Murder,1451
+Northeastern,Arunachal Pradesh,Offences against State,0
+Northeastern,Sikkim,Offences against State,0
+Northeastern,Tripura,Offences against State,1
+Northeastern,Assam,Offences against State,56
+Northeastern,Sikkim,Other IPC crimes,216
+Northeastern,Tripura,Other IPC crimes,668
+Northeastern,Arunachal Pradesh,Other IPC crimes,720
+Northeastern,Assam,Other IPC crimes,29212
+Northeastern,Sikkim,Rape,47
+Northeastern,Arunachal Pradesh,Rape,83
+Northeastern,Tripura,Rape,239
+Northeastern,Assam,Rape,1980
+Northeastern,Arunachal Pradesh,Riots,33
+Northeastern,Sikkim,Riots,81
+Northeastern,Tripura,Riots,92
+Northeastern,Assam,Riots,2640
+Northeastern,Sikkim,Robbery,13
+Northeastern,Tripura,Robbery,43
+Northeastern,Arunachal Pradesh,Robbery,61
+Northeastern,Assam,Robbery,1038
+Northeastern,Sikkim,Theft,126
+Northeastern,Tripura,Theft,369
+Northeastern,Arunachal Pradesh,Theft,498
+Northeastern,Assam,Theft,12737
+Northern,Himachal Pradesh,Dacoity,4
+Northern,Chandigarh,Dacoity,6
+Northern,Jammu & Kashmir,Dacoity,6
+Northern,Uttarakhand,Dacoity,19
+Northern,Punjab,Dacoity,32
+Northern,Rajasthan,Dacoity,64
+Northern,Delhi UT,Dacoity,82
+Northern,Haryana,Dacoity,172
+Northern,Uttar Pradesh,Dacoity,294
+Northern,Chandigarh,Deaths due to negligent driving/act,89
+Northern,Uttarakhand,Deaths due to negligent driving/act,657
+Northern,Himachal Pradesh,Deaths due to negligent driving/act,730
+Northern,Jammu & Kashmir,Deaths due to negligent driving/act,766
+Northern,Delhi UT,Deaths due to negligent driving/act,1629
+Northern,Punjab,Deaths due to negligent driving/act,3173
+Northern,Haryana,Deaths due to negligent driving/act,4002
+Northern,Rajasthan,Deaths due to negligent driving/act,9096
+Northern,Uttar Pradesh,Deaths due to negligent driving/act,14486
+Northern,Himachal Pradesh,Dowry Deaths,1
+Northern,Chandigarh,Dowry Deaths,2
+Northern,Jammu & Kashmir,Dowry Deaths,5
+Northern,Uttarakhand,Dowry Deaths,38
+Northern,Punjab,Dowry Deaths,90
+Northern,Delhi UT,Dowry Deaths,153
+Northern,Haryana,Dowry Deaths,293
+Northern,Rajasthan,Dowry Deaths,408
+Northern,Uttar Pradesh,Dowry Deaths,2469
+Northern,Chandigarh,Grievous Hurt,19
+Northern,Uttarakhand,Grievous Hurt,181
+Northern,Jammu & Kashmir,Grievous Hurt,341
+Northern,Himachal Pradesh,Grievous Hurt,593
+Northern,Delhi UT,Grievous Hurt,690
+Northern,Rajasthan,Grievous Hurt,1491
+Northern,Haryana,Grievous Hurt,1671
+Northern,Punjab,Grievous Hurt,3017
+Northern,Uttar Pradesh,Grievous Hurt,10867
+Northern,Chandigarh,Hurt,19
+Northern,Uttarakhand,Hurt,181
+Northern,Jammu & Kashmir,Hurt,339
+Northern,Himachal Pradesh,Hurt,592
+Northern,Delhi UT,Hurt,659
+Northern,Rajasthan,Hurt,1485
+Northern,Haryana,Hurt,1656
+Northern,Punjab,Hurt,3000
+Northern,Uttar Pradesh,Hurt,10812
+Northern,Chandigarh,Incidence of Rash Driving,277
+Northern,Uttarakhand,Incidence of Rash Driving,485
+Northern,Punjab,Incidence of Rash Driving,1692
+Northern,Himachal Pradesh,Incidence of Rash Driving,2336
+Northern,Jammu & Kashmir,Incidence of Rash Driving,5003
+Northern,Haryana,Incidence of Rash Driving,6202
+Northern,Delhi UT,Incidence of Rash Driving,8760
+Northern,Rajasthan,Incidence of Rash Driving,14127
+Northern,Uttar Pradesh,Incidence of Rash Driving,16199
+Northern,Chandigarh,Kidnapping & Abduction_Total,187
+Northern,Himachal Pradesh,Kidnapping & Abduction_Total,304
+Northern,Uttarakhand,Kidnapping & Abduction_Total,691
+Northern,Jammu & Kashmir,Kidnapping & Abduction_Total,860
+Northern,Punjab,Kidnapping & Abduction_Total,1550
+Northern,Haryana,Kidnapping & Abduction_Total,3082
+Northern,Rajasthan,Kidnapping & Abduction_Total,5671
+Northern,Delhi UT,Kidnapping & Abduction_Total,7143
+Northern,Uttar Pradesh,Kidnapping & Abduction_Total,12361
+Northern,Chandigarh,Murder,24
+Northern,Himachal Pradesh,Murder,130
+Northern,Jammu & Kashmir,Murder,156
+Northern,Uttarakhand,Murder,218
+Northern,Delhi UT,Murder,586
+Northern,Punjab,Murder,767
+Northern,Haryana,Murder,1106
+Northern,Rajasthan,Murder,1637
+Northern,Uttar Pradesh,Murder,5150
+Northern,Chandigarh,Offences against State,0
+Northern,Delhi UT,Offences against State,0
+Northern,Haryana,Offences against State,0
+Northern,Punjab,Offences against State,0
+Northern,Rajasthan,Offences against State,0
+Northern,Uttar Pradesh,Offences against State,0
+Northern,Uttarakhand,Offences against State,0
+Northern,Himachal Pradesh,Offences against State,1
+Northern,Jammu & Kashmir,Offences against State,5
+Northern,Chandigarh,Other IPC crimes,480
+Northern,Uttarakhand,Other IPC crimes,2230
+Northern,Himachal Pradesh,Other IPC crimes,5997
+Northern,Jammu & Kashmir,Other IPC crimes,8135
+Northern,Punjab,Other IPC crimes,9378
+Northern,Delhi UT,Other IPC crimes,21396
+Northern,Haryana,Other IPC crimes,21923
+Northern,Uttar Pradesh,Other IPC crimes,66277
+Northern,Rajasthan,Other IPC crimes,80297
+Northern,Chandigarh,Rape,59
+Northern,Uttarakhand,Rape,270
+Northern,Himachal Pradesh,Rape,283
+Northern,Jammu & Kashmir,Rape,331
+Northern,Punjab,Rape,981
+Northern,Haryana,Rape,1174
+Northern,Delhi UT,Rape,2096
+Northern,Uttar Pradesh,Rape,3467
+Northern,Rajasthan,Rape,3759
+Northern,Punjab,Riots,0
+Northern,Chandigarh,Riots,33
+Northern,Delhi UT,Riots,160
+Northern,Uttarakhand,Riots,466
+Northern,Himachal Pradesh,Riots,478
+Northern,Rajasthan,Riots,536
+Northern,Jammu & Kashmir,Riots,1527
+Northern,Haryana,Riots,1944
+Northern,Uttar Pradesh,Riots,6438
+Northern,Himachal Pradesh,Robbery,16
+Northern,Chandigarh,Robbery,65
+Northern,Jammu & Kashmir,Robbery,89
+Northern,Uttarakhand,Robbery,155
+Northern,Punjab,Robbery,157
+Northern,Haryana,Robbery,874
+Northern,Rajasthan,Robbery,1301
+Northern,Uttar Pradesh,Robbery,3920
+Northern,Delhi UT,Robbery,6464
+Northern,Himachal Pradesh,Theft,652
+Northern,Chandigarh,Theft,1260
+Northern,Uttarakhand,Theft,1737
+Northern,Jammu & Kashmir,Theft,1773
+Northern,Punjab,Theft,5067
+Northern,Haryana,Theft,20314
+Northern,Rajasthan,Theft,29095
+Northern,Uttar Pradesh,Theft,48380
+Northern,Delhi UT,Theft,78753
+Southern,Puducherry,Dacoity,3
+Southern,Telangana,Dacoity,59
+Southern,Kerala,Dacoity,71
+Southern,Andhra Pradesh,Dacoity,75
+Southern,Tamil Nadu,Dacoity,101
+Southern,Karnataka,Dacoity,292
+Southern,Puducherry,Deaths due to negligent driving/act,198
+Southern,Kerala,Deaths due to negligent driving/act,3321
+Southern,Telangana,Deaths due to negligent driving/act,6356
+Southern,Andhra Pradesh,Deaths due to negligent driving/act,7260
+Southern,Karnataka,Deaths due to negligent driving/act,8764
+Southern,Tamil Nadu,Deaths due to negligent driving/act,14599
+Southern,Puducherry,Dowry Deaths,1
+Southern,Kerala,Dowry Deaths,28
+Southern,Tamil Nadu,Dowry Deaths,95
+Southern,Andhra Pradesh,Dowry Deaths,215
+Southern,Telangana,Dowry Deaths,289
+Southern,Karnataka,Dowry Deaths,313
+Southern,Puducherry,Grievous Hurt,105
+Southern,Andhra Pradesh,Grievous Hurt,597
+Southern,Telangana,Grievous Hurt,1057
+Southern,Tamil Nadu,Grievous Hurt,1519
+Southern,Karnataka,Grievous Hurt,1717
+Southern,Kerala,Grievous Hurt,1827
+Southern,Puducherry,Hurt,105
+Southern,Andhra Pradesh,Hurt,589
+Southern,Telangana,Hurt,1056
+Southern,Tamil Nadu,Hurt,1513
+Southern,Karnataka,Hurt,1712
+Southern,Kerala,Hurt,1823
+Southern,Puducherry,Incidence of Rash Driving,1173
+Southern,Andhra Pradesh,Incidence of Rash Driving,14653
+Southern,Telangana,Incidence of Rash Driving,14953
+Southern,Karnataka,Incidence of Rash Driving,31907
+Southern,Tamil Nadu,Incidence of Rash Driving,52844
+Southern,Kerala,Incidence of Rash Driving,108962
+Southern,Puducherry,Kidnapping & Abduction_Total,13
+Southern,Kerala,Kidnapping & Abduction_Total,222
+Southern,Andhra Pradesh,Kidnapping & Abduction_Total,1066
+Southern,Telangana,Kidnapping & Abduction_Total,1152
+Southern,Tamil Nadu,Kidnapping & Abduction_Total,1746
+Southern,Karnataka,Kidnapping & Abduction_Total,1933
+Southern,Puducherry,Murder,25
+Southern,Kerala,Murder,367
+Southern,Andhra Pradesh,Murder,1175
+Southern,Telangana,Murder,1308
+Southern,Karnataka,Murder,1636
+Southern,Tamil Nadu,Murder,1805
+Southern,Karnataka,Offences against State,0
+Southern,Puducherry,Offences against State,0
+Southern,Tamil Nadu,Offences against State,0
+Southern,Andhra Pradesh,Offences against State,1
+Southern,Telangana,Offences against State,3
+Southern,Kerala,Offences against State,7
+Southern,Puducherry,Other IPC crimes,1336
+Southern,Karnataka,Other IPC crimes,32587
+Southern,Telangana,Other IPC crimes,37013
+Southern,Andhra Pradesh,Other IPC crimes,44187
+Southern,Kerala,Other IPC crimes,55955
+Southern,Tamil Nadu,Other IPC crimes,84665
+Southern,Puducherry,Rape,10
+Southern,Tamil Nadu,Rape,455
+Southern,Andhra Pradesh,Rape,961
+Southern,Telangana,Rape,979
+Southern,Karnataka,Rape,1324
+Southern,Kerala,Rape,1347
+Southern,Puducherry,Riots,39
+Southern,Telangana,Riots,766
+Southern,Andhra Pradesh,Riots,1013
+Southern,Tamil Nadu,Riots,2784
+Southern,Kerala,Riots,5820
+Southern,Karnataka,Riots,6520
+Southern,Puducherry,Robbery,6
+Southern,Telangana,Robbery,308
+Southern,Andhra Pradesh,Robbery,433
+Southern,Kerala,Robbery,869
+Southern,Tamil Nadu,Robbery,1969
+Southern,Karnataka,Robbery,2516
+Southern,Puducherry,Theft,424
+Southern,Kerala,Theft,4700
+Southern,Tamil Nadu,Theft,11969
+Southern,Telangana,Theft,15342
+Southern,Andhra Pradesh,Theft,15617
+Southern,Karnataka,Theft,21019
+Western,D&N Haveli,Dacoity,0
+Western,Daman & Diu,Dacoity,0
+Western,Goa,Dacoity,13
+Western,Gujarat,Dacoity,296
+Western,Maharashtra,Dacoity,885
+Western,Daman & Diu,Deaths due to negligent driving/act,15
+Western,D&N Haveli,Deaths due to negligent driving/act,53
+Western,Goa,Deaths due to negligent driving/act,215
+Western,Gujarat,Deaths due to negligent driving/act,7039
+Western,Maharashtra,Deaths due to negligent driving/act,12039
+Western,D&N Haveli,Dowry Deaths,0
+Western,Daman & Diu,Dowry Deaths,0
+Western,Goa,Dowry Deaths,0
+Western,Gujarat,Dowry Deaths,23
+Western,Maharashtra,Dowry Deaths,279
+Western,D&N Haveli,Grievous Hurt,13
+Western,Daman & Diu,Grievous Hurt,15
+Western,Goa,Grievous Hurt,114
+Western,Gujarat,Grievous Hurt,3363
+Western,Maharashtra,Grievous Hurt,8127
+Western,D&N Haveli,Hurt,13
+Western,Daman & Diu,Hurt,15
+Western,Goa,Hurt,114
+Western,Gujarat,Hurt,3353
+Western,Maharashtra,Hurt,8120
+Western,Daman & Diu,Incidence of Rash Driving,25
+Western,D&N Haveli,Incidence of Rash Driving,34
+Western,Goa,Incidence of Rash Driving,607
+Western,Maharashtra,Incidence of Rash Driving,26060
+Western,Gujarat,Incidence of Rash Driving,29677
+Western,Daman & Diu,Kidnapping & Abduction_Total,10
+Western,D&N Haveli,Kidnapping & Abduction_Total,14
+Western,Goa,Kidnapping & Abduction_Total,152
+Western,Gujarat,Kidnapping & Abduction_Total,2722
+Western,Maharashtra,Kidnapping & Abduction_Total,3793
+Western,D&N Haveli,Murder,4
+Western,Daman & Diu,Murder,7
+Western,Goa,Murder,34
+Western,Gujarat,Murder,1124
+Western,Maharashtra,Murder,2670
+Western,D&N Haveli,Offences against State,0
+Western,Daman & Diu,Offences against State,0
+Western,Goa,Offences against State,0
+Western,Gujarat,Offences against State,0
+Western,Maharashtra,Offences against State,1
+Western,D&N Haveli,Other IPC crimes,30
+Western,Daman & Diu,Other IPC crimes,37
+Western,Goa,Other IPC crimes,721
+Western,Gujarat,Other IPC crimes,52810
+Western,Maharashtra,Other IPC crimes,62286
+Western,Daman & Diu,Rape,2
+Western,D&N Haveli,Rape,5
+Western,Goa,Rape,95
+Western,Gujarat,Rape,841
+Western,Maharashtra,Rape,3438
+Western,Daman & Diu,Riots,4
+Western,D&N Haveli,Riots,6
+Western,Goa,Riots,133
+Western,Gujarat,Riots,1354
+Western,Maharashtra,Riots,7760
+Western,D&N Haveli,Robbery,2
+Western,Daman & Diu,Robbery,5
+Western,Goa,Robbery,32
+Western,Gujarat,Robbery,1209
+Western,Maharashtra,Robbery,9466
+Western,Daman & Diu,Theft,31
+Western,D&N Haveli,Theft,38
+Western,Goa,Theft,1154
+Western,Gujarat,Theft,14337
+Western,Maharashtra,Theft,56283

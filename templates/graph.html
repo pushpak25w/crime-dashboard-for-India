@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome !</title>
+</head>
+<body>
+  <header>
+ <div class="container">
+
+   <nav>
+     <ul>
+       <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+       <li><a href="{{url_for('compare')}}">Compare</a></li>
+       <li><a href="{{url_for('info')}}">Information</a></li>
+     </ul>
+   </nav>
+
+ </div>
+</header>
+<div class="main">
+  <div class="container">
+
+<!-- <p>Want to visulaize in ??</p> -->
+<div class="head">
+
+  <p onclick="location.href='{{url_for('multi_select')}}'">Plots for multiple crimes</p>
+  <p onclick="location.href='{{url_for('plotly_children')}}'" >Interactive plot (crimes against children vs literacy rate) </p>
+</div>
+
+    <div class="choice">
+
+    <div onclick="location.href='{{url_for('multi_select')}}'" id="select">
+
+    </div>
+    <div onclick="location.href='{{url_for('plotly_children')}}'"  id="select_any">
+
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

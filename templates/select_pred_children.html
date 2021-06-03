@@ -16,19 +16,23 @@
 <body>
   <p>enter the heading</p>
   <div style="margin-top:100px"class="forms">
-    <form class="form-inline form" method="POST" action="{{ url_for('selected') }}">
+    <form class="form-inline form" method="POST" action="{{ url_for('children') }}">
       <div class="form-group">
         <div style="margin-left:10px" class="input-group">
-                <select style="margin-left:15px;border-radius:3px" name="district" class="selectpicker form-control">
-                  {% for o in data %}
+                <select style="margin-left:15px;border-radius:3px" name="state" class="selectpicker form-control">
+                  {% for o in states %}
                   <option style="margin-left:10px" value="{{ o.name }}">{{ o.name }}</option>
                   {% endfor %}
                 </select>
-                <select style="margin-left:5px;border-radius:3px"  name="crime" class="selectpicker form-control">
-                  <option style="margin-left:7px" value="MURDER">murder</option>
-                  <option style="margin-left:7px" value="women">women</option>
-                  <option style="margin-left:7px" value="theft">theft</option>
-                  <option style="margin-left:7px" value="children">children</option>
+                  <select style="margin-left:15px;border-radius:3px" name="crime" class="selectpicker form-control">
+                  {% for o in crimes %}
+                  <option style="margin-left:10px" value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
+                </select>
+                <select style="margin-left:15px;border-radius:3px" name="year" class="selectpicker form-control">
+                  {% for o in years %}
+                  <option style="margin-left:10px" value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
                 </select>
         </div>
         <button style="margin-left:15px; width:70px" type="submit" class="btn btn-primary">Go</button>
@@ -41,3 +45,4 @@
 
 
 </html>
+ 
