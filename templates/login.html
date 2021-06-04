@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Log in</title>
+		<link rel="stylesheet" type="text/css" href="./login-css.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	</head>
+	<body>
+
+		
+	
+
+
+	<div class="loginbox">
+		<div class="side_shot">
+
+			</div>
+				<div class="container">
+					<form class="form-inline form" method="POST" action="{{ url_for('selected_any') }}">
+    <div class="form-group">
+      <div  class="input-group">
+          <select name="crime" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            {% for i in crimes[3:] %}
+                <option value="{{ i.name }}">{{ i.name }}</option>
+                {% endfor %}
+          </select>
+      </div>
+      <button style="margin-left:10px; width:70px;margin-top: -10px;" type="submit" class="btn btn-primary">Go</button>
+    </div>
+  </form>
+				</div>
+			</div>
+	</div>
+	
+	</body>
+</html>

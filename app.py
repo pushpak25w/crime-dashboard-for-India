@@ -3,9 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 from datetime import datetime
-from India import districtwise,clean_states,data01to14,multi_crime_plot,plot_map_any
-from predictions import children_prediction,children_crimes,children_states,children_years
-   
+from India import districtwise,clean_states,data01to14,multi_crime_plot,plot_map_any,states_to_ui
+from predictions import children_prediction,children_crimes,children_states,children_years,pred_crime_plot,women_prediction,women_crimes,women_states,women_years
+
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
 db=SQLAlchemy(app)
@@ -41,13 +41,17 @@ def compare():
 def graph():
 	return render_template('graph.html')
 
+@app.route('/prediction')
+def prediction():
+	return render_template('prediction.html')
+
 @app.route('/map')
 def map():
 	return render_template('map.html')
 
 @app.route('/select')
 def select():
-	return render_template('select.html',data=[{'name':i} for i in clean_states(data01to14)])
+	return render_template('select.html',data=[{'name':i} for i in states_to_ui])
 
 @app.route('/selected',methods=['GET','POST'])
 def selected():
@@ -80,6 +84,7 @@ def selected_any():
 @app.route('/plotly_children')
 def plotly_children():
 	return render_template('plotly_children.html')
+
 @app.route('/children_select')
 def children_select():
 	return render_template('select_pred_children.html',states=[{'name':i} for i in children_states],crimes=[{'name':i} for i in children_crimes],years=[{'name':i} for i in children_years])
@@ -90,7 +95,22 @@ def children():
 	crime = request.form.get("crime")
 	state = request.form.get("state")
 	y,years,output=children_prediction(state,year,crime)
-	return render_template('children.html',output=output,state=state, year=year,crime=crime,prediction = y,years = years)
+	pred_crime_plot(state,crime,y,years)
+	return render_template('display_multi.html')
+	#return render_template('children.html',output=output,state=state, year=year,crime=crime,prediction = y,years = years)
+
+@app.route('/women_select')
+def women_select():
+	return render_template('select_pred_women.html',states=[{'name':i} for i in women_states],crimes=[{'name':i} for i in women_crimes],years=[{'name':i} for i in women_years])
+
+@app.route('/women',methods=['POST','GET'])
+def women():
+	year = request.form.get("year")		
+	crime = request.form.get("crime")
+	state = request.form.get("state")
+	y,years,output=women_prediction(state,year,crime)
+	pred_crime_plot(state,crime,y,years)
+	return render_template('display_multi.html')
 
 @app.route('/insert',methods=['POST','GET'])
 def insert():

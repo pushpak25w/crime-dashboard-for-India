@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="selectstyle.css">
+<link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -33,13 +33,13 @@
       <form class="form-inline form" method="POST" action="{{ url_for('multi_selected') }}">
         <div class="form-group">
           <div  class="input-group">
-            <select style="height:40px;width:200px"class="form-select form-select-lg mb-3" name="district" class="selectpicker form-control">
+            <select style="height:40px;width:200px"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="district" >
               {% for o in data %}
               <option style="width:200px"value="{{ o.name }}">{{ o.name }}</option>
               {% endfor %}
             </select>
-            <label style="margin-left: 10px;height:45px;" for="crime">  Choose crimes : </label>
-            <select style="margin-left:5px;height:40px"  class="form-select" multiple aria-label="multiple select example" name="crime" id="crime" multiple>
+            <label style="margin-left: 10px;height:45px;" for="crime">  Crimes : </label>
+            <select style="margin-left:5px;height:60px"   class="form-select" multiple aria-label="multiple select example" name="crime" id="crime" multiple>
               {% for i in crimes[3:] %}
               <option style="width:200px" value="{{ i.name }}">{{ i.name }}</option>
               {% endfor %}

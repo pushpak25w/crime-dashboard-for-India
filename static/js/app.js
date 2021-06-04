@@ -22,3 +22,4 @@ counters.forEach(counter =>
 });
 
 const but= document.getElementsByClassName("button")[0];
+

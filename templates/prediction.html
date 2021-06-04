@@ -27,16 +27,16 @@
 <!-- <p>Want to visulaize in ??</p> -->
 <div style="width:60%;margin:auto" class="head">
 
-  <p style="font-size :1.5rem;width:55%;margin-left:190px;margin-right:20px" onclick="location.href='{{url_for('select')}}'">Districtwise general crimes</p>
-  <p style="font-size :1.5rem;width:55%;margin-right:190px;margin-left:20px" onclick="location.href='{{url_for('select_any')}}'" >All crimes</p>
+  <p style="font-size :1.5rem;width:55%;margin-left:190px;margin-right:20px" onclick="location.href='{{url_for('women_select')}}'">Predictions for crime against women</p>
+  <p style="font-size :1.5rem;width:55%;margin-right:190px;margin-left:20px" onclick="location.href='{{url_for('children_select')}}'" >Predictions for crime against children</p>
 </div>
 
     <div class="choice">
 
-    <div onclick="location.href='{{url_for('select')}}'" id="select">
+    <div onclick="location.href='{{url_for('women_select')}}'" id="select">
 
     </div>
-    <div onclick="location.href='{{url_for('select_any')}}'"  id="select_any">
+    <div onclick="location.href='{{url_for('children_select')}}'"  id="select_any">
 
     </div>
     </div>
@@ -44,3 +44,4 @@
 </div>
 </body>
 </html>
+ 

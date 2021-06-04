@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Prediction</title>
+</head>
+<body>
+  <div style="margin-top:100px"class="forms">
+    <form class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" method="POST" action="{{ url_for('women') }}">
+      <div class="form-group">
+        <div class="input-group">
+              <select class="form-select form-select-lg mb-3" name="state" aria-label=".form-select-lg example">
+              {% for o in states %}
+                  <option value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
+            </select>
+            <select class="form-select form-select-sm" name="crime" aria-label=".form-select-sm example">
+              {% for o in crimes %}
+                  <option value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
+            </select>
+            <br>
+            <br>
+          <select class="form-select form-select-sm" name="year" aria-label=".form-select-sm example">
+              {% for o in years %}
+                  <option value="{{ o.name }}">{{ o.name }}</option>
+                  {% endfor %}
+            </select>
+        </div>
+        <button style="width:70px" type="submit" class="btn btn-primary">Go</button>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+
+
+</html>
+ 

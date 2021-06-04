@@ -2,7 +2,9 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-
+fp = "gadm36_IND_shp/gadm36_IND_2.shp"
+map_df = gpd.read_file(fp)
+states_to_ui=map_df['NAME_1'].unique()
 #map_df = map_df[['NAME_2', 'geometry']]
 data01to14=pd.read_csv('data/01_District_wise_crimes_committed_IPC_2001_2012.csv')
 def clean_states(data01to14):
@@ -105,7 +107,7 @@ def districtwise(crime,district):
 
 def multi_crime_plot(district,crime):
     district_wise = data01to14[data01to14['DISTRICT'] == district]
-    gr_plt=district_wise.set_index('YEAR')[crime].plot(kind = 'line', figsize = (8,8))
+    gr_plt=district_wise.set_index('YEAR')[crime].plot(kind = 'line', figsize = (10,10))
     plt.xlabel('Years')
     plt.ylabel('No. of Cases in '+district)
     plt.title(','.join(crime))
