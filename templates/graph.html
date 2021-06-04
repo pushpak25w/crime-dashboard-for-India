@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}">
+  <link rel="stylesheet" href="selectstyle.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome !</title>
 </head>
@@ -16,7 +16,7 @@
       <nav>
         <ul>
           <li class="current"><a href="{{url_for('index')}}">Home</a></li>
-          <li><a href="{{url_for('prediction')}}">Prediction</a></li>
+          <li><a href="{{url_for('compare')}}">Compare</a></li>
           <li><a href="{{url_for('info')}}">Information</a></li>
         </ul>
       </nav>
@@ -29,11 +29,11 @@
       <!-- <p>Want to visulaize in ??</p> -->
       <div class="head">
 
-        <p style="font-size :1.5rem;width:40%;margin-left:200px;margin-right:10px" onclick="location.href='{{url_for('multi_select')}}'">Plots for multiple crimes</p>
-        <p style="font-size :1.5rem;width:40%;margin-right:200px;margin-left:10px" onclick="location.href='{{url_for('plotly_children')}}'">Interactive plot (crimes against children vs literacy rate) </p>
+        <p style="font-size :1.5rem;width:50%;margin-left:250px;margin-right:10px" onclick="location.href='{{url_for('multi_select')}}'">Plots for multiple crimes</p>
+        <p style="font-size :1.5rem;width:50%;margin-right:200px;margin-left:10px" onclick="location.href='{{url_for('plotly_children')}}'">Interactive plot (crimes against children vs literacy rate) </p>
       </div>
 
-      <div class="choice">
+      <div style="margin-left:300px"class="choice">
 
         <div onclick="location.href='{{url_for('multi_select')}}'" id="select">
 
