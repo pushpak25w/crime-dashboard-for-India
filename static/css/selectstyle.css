@@ -9,18 +9,19 @@ body ,html{
   line-height: 1.8em;
   font-weight: 400;
   color: #666;
+  background: url('../images/background.jpg') no-repeat center center/cover;
+
 
 }
 .display_img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
   height: 700px;
   object-fit: cover;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
-
 p{
   text-align: center;
    margin: auto;
@@ -42,10 +43,8 @@ p{
 {
   margin: auto;
   margin-top: 50px;
-  width: 70%;
-  border: 2px solid #000;
+  width: 90%;
   padding: -1px;
-  border-radius: 3px;
 }
 header{
   background-color: #35424a;
@@ -120,7 +119,7 @@ header a:hover{
 {
   list-style: none;
 }
-.main .container #select , #select_any
+.main .container #select , #select_any, #select_pred, #select_any_pred
 {
 
   height:400px;
@@ -143,16 +142,33 @@ header a:hover{
   margin-left: 100px;
     margin-right: 10px;
   width: 400px;
-  background: url('../images/graoh_3.jpg') no-repeat center center/cover;
+  background: url('../images/for_graph.jpeg') no-repeat center center/cover;
 
 }
+.main #select_pred
+{  margin-top: 10px;
+  margin-left: 100px;
+    margin-right: 10px;
+  width: 400px;
+  background: url('../images/for_prediction_1.jpeg') no-repeat center center/cover;
+
+}
+
 .main #select_any
 {
   margin-top: 10px;
   margin-left: 10px;
     margin-right: 100px;
     width: 400px;
-  background: url('../images/map_3.jpg') no-repeat center center/cover;
+  background: url('../images/for_graph_1.jpeg') no-repeat center center/cover;
+}
+.main #select_any_pred
+{
+  margin-top: 10px;
+  margin-left: 10px;
+    margin-right: 100px;
+    width: 400px;
+  background: url('../images/for_prediction_2.jpeg') no-repeat center center/cover;
 }
 .main #select:hover{
   border:3px solid green;

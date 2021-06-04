@@ -16,11 +16,12 @@ def children_prediction(state,year,crime):
 	global data_children
 	data=data_children
 	year=int(year)
-	X=data .iloc[0:1,2:].values[0]
+	X=data.iloc[0:1,2:].values[0]
 	X_train=np.array([int(i) for i in X])
-	data =data [data [0]==state]
-	data =data [data [1]==crime]
-	y=data .iloc[:,2:].values[0]
+	data =data[data [0]==state]
+	data =data[data [1]==crime]
+	print(data.iloc[:,2:])
+	y=data.iloc[:,2:].values[0]
 	y_train=np.array([int(i) for i in y])
 	linear_regression=LinearRegression()
 	linear_regression.fit(X_train.reshape(-1,1),y_train)
@@ -32,7 +33,7 @@ def children_prediction(state,year,crime):
 		y = list(y)
 		years = list(b)
 		year = 2016
-		output = "Can't predict"
+		output = "Can't predict further"
 	else:
 		for j in range(2017,year+1):
 			prediction = linear_regression.predict(np.array([[j]]))

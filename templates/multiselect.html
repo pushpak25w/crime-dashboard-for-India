@@ -31,7 +31,7 @@
   <div class="forms">
 
       <form class="form-inline form" method="POST" action="{{ url_for('multi_selected') }}">
-        <div class="form-group">
+        <div style="margin-left:80px;"class="form-group">
           <div  class="input-group">
             <select style="height:40px;width:200px"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="district" >
               {% for o in data %}
@@ -39,7 +39,7 @@
               {% endfor %}
             </select>
             <label style="margin-left: 10px;height:45px;" for="crime">  Crimes : </label>
-            <select style="margin-left:5px;height:60px"   class="form-select" multiple aria-label="multiple select example" name="crime" id="crime" multiple>
+            <select  style="margin-left:5px;height:70px"   class="form-select" multiple aria-label="multiple select example" name="crime" id="crime" multiple>
               {% for i in crimes[3:] %}
               <option style="width:200px" value="{{ i.name }}">{{ i.name }}</option>
               {% endfor %}

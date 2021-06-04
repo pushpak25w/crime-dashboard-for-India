@@ -51,7 +51,7 @@ def map():
 
 @app.route('/select')
 def select():
-	return render_template('select.html',data=[{'name':i} for i in states_to_ui])
+	return render_template('select.html',data=[{'name':i} for i in ['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh','Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jharkhand','Karnataka', 'Kerala', 'Lakshadweep', 'Madhya Pradesh','Maharashtra', 'Manipur', 'Mizoram', 'Nagaland','Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']])
 
 @app.route('/selected',methods=['GET','POST'])
 def selected():
