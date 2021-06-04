@@ -1,18 +1,29 @@
-
-<!DOCTYPE html>
-<html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Prediction</title>
+  <title>select_women_pred</title>
 </head>
+
+<body>
+  <header style="height:80px;">
+ <div class="container">
+
+   <nav>
+     <ul>
+       <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+       <li><a href="{{url_for('prediction')}}">Prediction</a></li>
+       <li><a href="{{url_for('info')}}">Information</a></li>
+     </ul>
+   </nav>
+
+ </div>
+</header>
 <body>
   <div style="margin-top:100px"class="forms">
     <form class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" method="POST" action="{{ url_for('women') }}">
