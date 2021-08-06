@@ -1,4 +1,4 @@
-# crime-analysis-in-India
+# crime-dashboard-for-India
 Two types of visualizations:
 ![image](https://user-images.githubusercontent.com/50488701/121695486-b7cfbb80-cae8-11eb-8d36-85cc1fd79d8e.png)
 
