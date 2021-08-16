@@ -52,7 +52,7 @@ $ flask run
 ## Multiple crimes districtwise:
 ![image](https://user-images.githubusercontent.com/50488701/121695951-30367c80-cae9-11eb-9790-037fbd31c542.png)
 
-## This helps to focus on selected crimes 
+This helps to focus on selected crimes 
 e.g theft,robbery,burglary,auto theft.
 ![image](https://user-images.githubusercontent.com/50488701/121696001-40e6f280-cae9-11eb-8c38-6b4415a1e8c3.png)
 
