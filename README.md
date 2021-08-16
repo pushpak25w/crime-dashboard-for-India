@@ -5,7 +5,7 @@ Libraries used: pandas,numpy,matplotlib,sklearn and geapandas.
 
 Framework: Flask
 
-##Features:
+## Features:
 1. Heatmaps for country and states. (country map for 21 crimes and state maps for 28 states for 4 dfferent crime)
 2. Plots for multiple selected crimes in districts. (718 districts and 21 crimes)
 3. Interactive plot for crime against children vs literacy rate in country.
