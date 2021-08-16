@@ -2,6 +2,7 @@
 This website is a dashboard for crimes in India displaying and predicting different crimes in different states and districts.
 
 Libraries used: pandas,numpy,matplotlib,sklearn and geapandas.
+
 Framework: Flask
 
 Features:
