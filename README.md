@@ -1,4 +1,13 @@
 # crime-dashboard-for-India
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Features](#features)
+* [Features to be added](#features-to-be-added)
+* [Setup](#setup)
+
+
+## General info
 This website is a dashboard for crimes in India displaying and predicting different crimes in different states and districts.
 
 ## Technologies:
