@@ -1,7 +1,7 @@
 # crime-dashboard-for-India
 This website is a dashboard for crimes in India displaying and predicting different crimes in different states and districts.
 
-### Technologies:
+## Technologies:
 1. python3.8
 2. matplotlib-3.4.2
 3. Flask-2.0.1
@@ -11,16 +11,23 @@ This website is a dashboard for crimes in India displaying and predicting differ
 7. numpy-1.21.1
 8. scikit_learn-0.24.2
 
-### Features:
+## Features:
 1. Heatmaps for country and states. (country map for 21 crimes and state maps for 28 states for 4 dfferent crime)
 2. Plots for multiple selected crimes in districts. (718 districts and 21 crimes)
 3. Interactive plot for crime against children vs literacy rate in country.
 4. Prediction of 7 different crimes against women and 10 different crimes against children in 28 states and 9 union territories.
 
-### Features to be added:
+## Features to be added:
 1. Accessing data from database instead of reading csv files.
 2. Update and delete for records in database.
 
+## Setup
+To run this project, install libraries given above:
+
+```
+$ cd cd crime-analysis-in-India2/
+$ flask run
+```
 
 ## Two types of visualizations:
 ![image](https://user-images.githubusercontent.com/50488701/121695486-b7cfbb80-cae8-11eb-8d36-85cc1fd79d8e.png)
