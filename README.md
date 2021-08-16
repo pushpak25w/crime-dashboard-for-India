@@ -25,7 +25,7 @@ This website is a dashboard for crimes in India displaying and predicting differ
 To run this project, install libraries given above:
 
 ```
-$ cd cd crime-analysis-in-India2/
+$ cd crime-dashboard-for-India/
 $ flask run
 ```
 
