@@ -11,6 +11,10 @@ Features:
 3. Interactive plot for crime against children vs literacy rate in country.
 4. Prediction of 7 different crimes against women and 10 different crimes against children in 28 states and 9 union territories.
 
+Features to be added:
+1. Accessing data from database instead of reading csv files.
+2. Update and deleting of records in database.
+
 
 Two types of visualizations:
 ![image](https://user-images.githubusercontent.com/50488701/121695486-b7cfbb80-cae8-11eb-8d36-85cc1fd79d8e.png)
@@ -28,3 +32,5 @@ Multiple crimes districtwise:
 
 This helps to focus on selected crimes e.g theft,robbery,burglary,auto theft.
 ![image](https://user-images.githubusercontent.com/50488701/121696001-40e6f280-cae9-11eb-8c38-6b4415a1e8c3.png)
+
+
