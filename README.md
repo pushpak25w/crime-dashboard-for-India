@@ -11,6 +11,7 @@ Features:
 3. Interactive plot for crime against children vs literacy rate in country.
 4. Prediction of 7 different crimes against women and 10 different crimes against children in 28 states and 9 union territories.
 
+
 Two types of visualizations:
 ![image](https://user-images.githubusercontent.com/50488701/121695486-b7cfbb80-cae8-11eb-8d36-85cc1fd79d8e.png)
 
@@ -24,5 +25,6 @@ Statewise heatmap based on crime:
 
 Multiple crimes districtwise:
 ![image](https://user-images.githubusercontent.com/50488701/121695951-30367c80-cae9-11eb-9790-037fbd31c542.png)
+
 This helps to focus on selected crimes e.g theft,robbery,burglary,auto theft.
 ![image](https://user-images.githubusercontent.com/50488701/121696001-40e6f280-cae9-11eb-8c38-6b4415a1e8c3.png)
