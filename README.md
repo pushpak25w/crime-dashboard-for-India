@@ -1,9 +1,15 @@
 # crime-dashboard-for-India
 This website is a dashboard for crimes in India displaying and predicting different crimes in different states and districts.
 
-Libraries used: pandas,numpy,matplotlib,sklearn and geapandas.
-
-Framework: Flask
+### Technologies:
+1. python3.8
+2. matplotlib-3.4.2
+3. Flask-2.0.1
+4. Flask_SQLAlchemy-2.5.1
+5. geopandas-0.9.0
+6. pandas-1.3.0
+7. numpy-1.21.1
+8. scikit_learn-0.24.2
 
 ### Features:
 1. Heatmaps for country and states. (country map for 21 crimes and state maps for 28 states for 4 dfferent crime)
